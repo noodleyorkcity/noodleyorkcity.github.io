@@ -1,0 +1,64 @@
+!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Noodle York City</title>
+</head>
+
+<body>
+
+<div class="topnav" id="topnav">
+  <div class="navcontainer">
+  <a href="../index.html">Home</a>
+  <a href="work.html">Work</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<div class="subpage" id="worksubpage">
+<div class="container">  
+  <form id="contact" action="https://formspree.io/noodleyorkcity21@gmail.com" method="post" name="contactform">
+    <h3>Contact Me</h3>
+    <h4>Contact me for any questions or information</h4>
+    <fieldset>
+    <input name="Name" placeholder="Your Name" type="text" tabindex="1" required>
+    </fieldset>
+    <fieldset>
+    <input type="Email" name="email" placeholder="Your E-mail" required>
+    </fieldset>
+    <fieldset>
+    <input name="Phone" placeholder="Your Phone Number (optional)" type="tel" tabindex="3" >
+    </fieldset>
+    <fieldset>
+    <textarea name="message" placeholder="Your message..." required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+</div>
+
+</div>
+
+<div class="footer">
+	<a href="#" class="fa fa-facebook"></a>
+	<a href="http://instagram.com/bey0nka" class="fa fa-instagram"></a>
+	<a href="#" class="fa fa-linkedin"></a>
+	<a href="#" class="fa fa-twitter"></a>
+</div>
+
+
+<script language="JavaScript">
+// Code for validating the form
+// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+// for details
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+</script>
+
+</body>
+</html>
